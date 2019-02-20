@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Université Mundiapolis de Casablanca</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-32347286-1', 'auto');
+ ga('require', 'GTM-NWRDXRC');
+ ga('send', 'pageview');
+ </script>
+ <script>
+ (function (w, d, s, l, i) {
+   w[l] = w[l] || []; w[l].push({
+     'gtm.start':
+     new Date().getTime(), event: 'gtm.js'
+   }); var f = d.getElementsByTagName(s)[0],
+   j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+   'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+ })(window, document, 'script', 'dataLayer', 'GTM-WZMMLS5');
+ </script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+  <noscript>
+   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZMMLS5"
+   height="0" width="0" style="display:none;visibility:hidden"></iframe>
+ </noscript>
+ <div id="wrapper">
+   <nav class="navbar navbar-custom" role="navigation">
+    <div class="container navigation">
+     <div class="navbar-header page-scroll">
+      <img class="navbar-logo" src="img/logo-mundiapolis.png" alt="logo mundiapolis"/>
+      <img class="navbar-accreditation" src="img/mention-reconnaissance.png" alt="accréditation mundiapolis"/>
+      <span class="navbar-call">Appelez nous au :<br><span>+212 (0) 529 01 37 07</span><br><span>+212 (0) 7 71 10 06 09 </span></span>
+    </div>
+  </div>
+</nav>
+<section id="intro" class="intro">
+  <div class="intro-content">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-6 col-centered">
+      <div class="intro-rtb">
+        <div class="circle"><span class="fa-stack fa-md"><i class="fa fa-graduation-cap fa-stack-2x"></i></span></div>
+        <h3>Excellence académique et diplômes reconnus par l’Etat</h3>
+        <p>Délivrance de diplômes équivalents à ceux de l’Etat.<br>Un modèle pédagogique innovant porté par des professeurs nationaux et internationaux de renom.</p>
+      </div>
+      <div class="intro-rtb">
+        <div class="circle"><span class="fa-stack fa-md"><i class="fa fa-globe fa-stack-2x"></i></span></div>
+        <h3>Ouverture internationale</h3>
+        <p>Partenariats avec des écoles et Universités Internationales prestigieuses.<br>1 étudiant sur 4 en mobilité internationale.<br>1 professeur sur 5 est international.</p>
+      </div>
+      <div class="intro-rtb">
+        <div class="circle"><span class="fa-stack fa-md"><i class="fa fa-briefcase fa-stack-2x"></i></span></div>
+        <h3>Accompagnement à l’employabilité</h3>
+        <p>93% d’insertion professionnelle grâce au programme d’accompagnement Mundiatawjih® reconnu comme meilleure pratique par la Banque Mondiale.</p>
+      </div>
+      <div class="intro-rtb">
+        <div class="circle"><span class="fa-stack fa-md"><i class="fa fa-star fa-stack-2x"></i></span></div>
+        <h3>Une expérience estudiantine riche !</h3>
+        <p>Sport, culture, engagement citoyen et implication des étudiants dans la gouvernance de l’Université.</p>
+      </div>
+    </div>
+    <div class="col-lg-6 col-centered">
+      <div class="form-wrapper">
+        <form id="describe-form" class="tab" data-describe></form>
+        <div id="form">
+         <div class="previous" id="previous" onclick="previous()"><span class="fa-stack fa-md"><i class="fa fa-angle-left fa-stack-1x"></i></span></div>
+         <h2 class="title">Formulaire de candidature</h2>
+         <div id="progresswrapper"><div id="progressbar"></div></div>
+        <p class="title">Vous souhaitez être contacté par notre conseiller d'orientation pour vous guider pas à pas lors de vos démarches ?
+        </h2>
+        <div id="messagebar"></div>
+        <div id="form1" class="form">
+          <h3 class="title">Cliquez sur la formation de votre choix.</h3>
+          <div class="fieldcontainer" onclick="progress(1)">
+           <div id="pbusiness" class="pbusiness pole enabled" onclick="step2('Business')">Business</div>
+          <div id="pingenierie" class="pingenierie pole enabled" onclick="step2('Ingenierie')">Ingénierie</div>
+          <div id="pgouvernance" class="pgouvernance pole enabled" onclick="step2('Gouvernance')">Droit & Sciences Po</div>
+          <div id="psante" class="psante pole enabled" onclick="step2('Sante')">Santé</div>
+          <div class="pnone pole enabled" onclick="step2('Je ne sais pas encore')">Je ne sais pas</div>
+        </div>
+      </div>
+      <div id="form2" class="form">
+        <h3 class="title">Renseignez les informations relatives à votre baccalauréat.</h3>
+        <div class="fieldcontainer">
+          <select type="text" id="anneebac" class="stepoption" placeholder="Année du bac" onchange="progress(2)">
+           <option disabled="disabled" selected="selected">Année du bac</option>
+           <option value="2018">2018 (en cours)</option>
+           <option value="2017">2017</option>
+           <option value="2016">2016</option>
+           <option value="2015">2015</option>
+           <option value="2014">2014</option>
+           <option value="2013">2013 (ou avant)</option>
+         </select>
+         <select type="text" id="seriebac" class="stepoption" placeholder="Série du bac" onchange="progress(3)">
+           <option disabled="disabled" selected="selected">Série du bac</option>
+           <option value="Commerciale">Commerciale</option>
+           <option value="Littéraire">Littéraire</option>
+           <option value="Scientifique">Scientifique</option>
+           <option value="Technique">Technique</option>
+           <option value="Autre">Autre</option>
+         </select>
+         <select id="typelycee" type="text" class="stepoption" onchange="progress(4)">
+           <option disabled="disabled" selected="selected" value="">Type de Lycée</option>
+           <option value="PUBLIC">Public</option>
+           <option value="PRIVE">Privé</option>
+         </select>
+         <select id="bacCity" type="text" class="stepoption" onchange="progress(5)">
+           <option disabled="disabled" selected="selected" value="">Ville</option>
+           <option value="Casablanca">Casablanca</option>
+           <option value="" disabled="disabled">------------</option>
+           <option value="Agadir">Agadir</option>
+           <option value="Beni Mellal">Beni Mellal</option>
+           <option value="Berrechid">Berrechid</option>
+           <option value="El Jadida">El Jadida</option>
+           <option value="Fes">Fes</option>
+           <option value="Kenitra">Kenitra</option>
+           <option value="Khouribga">Khouribga</option>
+           <option value="Marrakesh">Marrakesh</option>
+           <option value="Meknes">Meknes</option>
+           <option value="Mohammedia">Mohammedia</option>
+           <option value="Rabat">Rabat</option>
+           <option value="" disabled="disabled">------------</option>
+           <option value="Abidjan">Abidjan</option>
+           <option value="Brazzaville">Brazzaville</option>
+           <option value="Dakar">Dakar</option>
+           <option value="Douala">Douala</option>
+           <option value="Kinshasa">Kinshasa</option>
+           <option value="Libreville">Libreville</option>
+           <option value="" disabled="disabled">-----------</option>
+           <option value="Autre">Autre</option>
+         </select>
+         <input type="submit" class="step-action" id="step2" name="send" value="SUIVANT" onclick="step3()" />
+       </div>
+     </div>
+     <div id="form3" class="form">
+      <div class="fieldcontainer">
+        <h3 class="title">Renseignez vos informations personnelles.</h3>
+        <input id="prenom" type="text" class="stepfield" placeholder="Prénom" onchange="progress(6)">
+        <input id="nom" type="text" class="stepfield" placeholder="Nom de famille" onchange="progress(7)">
+        <input id="email" type="text" class="stepfield" placeholder="Adresse Email" onchange="progress(8)">
+<input id="phone-input" type="text" data-type="phone">
+        <select id="indicatif" type="text" class="stepoption">
+<option value="+212" selected>+212</option>
+<option value="+223">+223</option>
+<option value="+225">+225</option>
+<option value="+226">+226</option>
+<option value="+237">+237</option>
+<option value="+241">+241</option>
+<option value="+242">+242</option>
+<option value="+243">+243</option>
+<option value="1">+1</option>
+<option value="+11">+11</option>
+<option value="+20">+20</option>
+<option value="+211">+211</option>
+<option value="+212">+212</option>
+<option value="+213">+213</option>
+<option value="+216">+216</option>
+<option value="+218">+218</option>
+<option value="+220">+220</option>
+<option value="+221">+221</option>
+<option value="+222">+222</option>
+<option value="+224">+224</option>
+<option value="+227">+227</option>
+<option value="+228">+228</option>
+<option value="+229">+229</option>
+<option value="+230">+230</option>
+<option value="+231">+231</option>
+<option value="+232">+232</option>
+<option value="+233">+233</option>
+<option value="+234">+234</option>
+<option value="+235">+235</option>
+<option value="+236">+236</option>
+<option value="+238">+238</option>
+<option value="+239">+239</option>
+<option value="+240">+240</option>
+<option value="+244">+244</option>
+<option value="+245">+245</option>
+<option value="+246">+246</option>
+<option value="+247">+247</option>
+<option value="+248">+248</option>
+<option value="+249">+249</option>
+<option value="+250">+250</option>
+<option value="+251">+251</option>
+<option value="+252">+252</option>
+<option value="+253">+253</option>
+<option value="+254">+254</option>
+<option value="+255">+255</option>
+<option value="+256">+256</option>
+<option value="+257">+257</option>
+<option value="+258">+258</option>
+<option value="+260">+260</option>
+<option value="+261">+261</option>
+<option value="+262">+262</option>
+<option value="+263">+263</option>
+<option value="+264">+264</option>
+<option value="+265">+265</option>
+<option value="+266">+266</option>
+<option value="+267">+267</option>
+<option value="+268">+268</option>
+<option value="+269">+269</option>
+<option value="+27">+27</option>
+<option value="+290">+290</option>
+<option value="+291">+291</option>
+<option value="+297">+297</option>
+<option value="+298">+298</option>
+<option value="+299">+299</option>
+<option value="+30">+30</option>
+<option value="+31">+31</option>
+<option value="+32">+32</option>
+<option value="+33">+33</option>
+<option value="+34">+34</option>
+<option value="+350">+350</option>
+<option value="+351">+351</option>
+<option value="+352">+352</option>
+<option value="+353">+353</option>
+<option value="+354">+354</option>
+<option value="+355">+355</option>
+<option value="+356">+356</option>
+<option value="+357">+357</option>
+<option value="+358">+358</option>
+<option value="+359">+359</option>
+<option value="+36">+36</option>
+<option value="+370">+370</option>
+<option value="+371">+371</option>
+<option value="+372">+372</option>
+<option value="+373">+373</option>
+<option value="+374">+374</option>
+<option value="+375">+375</option>
+<option value="+376">+376</option>
+<option value="+377">+377</option>
+<option value="+378">+378</option>
+<option value="+379">+379</option>
+<option value="+380">+380</option>
+<option value="+381">+381</option>
+<option value="+382">+382</option>
+<option value="+385">+385</option>
+<option value="+386">+386</option>
+<option value="+387">+387</option>
+<option value="+389">+389</option>
+<option value="+39">+39</option>
+<option value="+40">+40</option>
+<option value="+41">+41</option>
+<option value="+420">+420</option>
+<option value="+421">+421</option>
+<option value="+423">+423</option>
+<option value="+43">+43</option>
+<option value="+44">+44</option>
+<option value="+45">+45</option>
+<option value="+46">+46</option>
+<option value="+47">+47</option>
+<option value="+48">+48</option>
+<option value="+49">+49</option>
+<option value="+500">+500</option>
+<option value="+501">+501</option>
+<option value="+502">+502</option>
+<option value="+503">+503</option>
+<option value="+504">+504</option>
+<option value="+505">+505</option>
+<option value="+506">+506</option>
+<option value="+507">+507</option>
+<option value="+508">+508</option>
+<option value="+509">+509</option>
+<option value="+51">+51</option>
+<option value="+52">+52</option>
+<option value="+53">+53</option>
+<option value="+54">+54</option>
+<option value="+55">+55</option>
+<option value="+56">+56</option>
+<option value="+57">+57</option>
+<option value="+58">+58</option>
+<option value="+590">+590</option>
+<option value="+591">+591</option>
+<option value="+592">+592</option>
+<option value="+593">+593</option>
+<option value="+594">+594</option>
+<option value="+595">+595</option>
+<option value="+596">+596</option>
+<option value="+597">+597</option>
+<option value="+598">+598</option>
+<option value="+599">+599</option>
+<option value="+60">+60</option>
+<option value="+61">+61</option>
+<option value="+62">+62</option>
+<option value="+63">+63</option>
+<option value="+64">+64</option>
+<option value="+65">+65</option>
+<option value="+66">+66</option>
+<option value="+670">+670</option>
+<option value="+672">+672</option>
+<option value="+673">+673</option>
+<option value="+674">+674</option>
+<option value="+675">+675</option>
+<option value="+676">+676</option>
+<option value="+677">+677</option>
+<option value="+678">+678</option>
+<option value="+679">+679</option>
+<option value="+680">+680</option>
+<option value="+681">+681</option>
+<option value="+682">+682</option>
+<option value="+683">+683</option>
+<option value="+685">+685</option>
+<option value="+686">+686</option>
+<option value="+687">+687</option>
+<option value="+688">+688</option>
+<option value="+689">+689</option>
+<option value="+690">+690</option>
+<option value="+691">+691</option>
+<option value="+692">+692</option>
+<option value="+7">+7</option>
+<option value="+81">+81</option>
+<option value="+82">+82</option>
+<option value="+84">+84</option>
+<option value="+850">+850</option>
+<option value="+852">+852</option>
+<option value="+853">+853</option>
+<option value="+855">+855</option>
+<option value="+856">+856</option>
+<option value="+86">+86</option>
+<option value="+880">+880</option>
+<option value="+886">+886</option>
+<option value="+90">+90</option>
+<option value="+91">+91</option>
+<option value="+92">+92</option>
+<option value="+93">+93</option>
+<option value="+94">+94</option>
+<option value="+95">+95</option>
+<option value="+960">+960</option>
+<option value="+961">+961</option>
+<option value="+962">+962</option>
+<option value="+963">+963</option>
+<option value="+964">+964</option>
+<option value="+965">+965</option>
+<option value="+966">+966</option>
+<option value="+967">+967</option>
+<option value="+968">+968</option>
+<option value="+970">+970</option>
+<option value="+971">+971</option>
+<option value="+972">+972</option>
+<option value="+973">+973</option>
+<option value="+974">+974</option>
+<option value="+975">+975</option>
+<option value="+976">+976</option>
+<option value="+977">+977</option>
+<option value="+98">+98</option>
+<option value="+992">+992</option>
+<option value="+993">+993</option>
+<option value="+994">+994</option>
+<option value="+995">+995</option>
+<option value="+996">+996</option>
+<option value="+998">+998</option>
+
+        </select>
+
+        <input id="mobile" type="text" class="stepfield" placeholder="Mobile" onchange="progress(9)">
+        <input type="submit" class="step-action" id="step2" name="send" value="Confirmer" onclick="step4()" />
+        <div id="croqs-form"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="boxes" class="home-section paddingtop-80">
+  <div class="section-heading text-center">
+   <h2 class="h-bold">Mundiapolis, une Université pluridisciplinaire</h2>
+   <div class="divider-short"></div>
+ </div>
+ <div class="container container marginbot-50">
+   <div class="row">
+    <div class="col-sm-3 col-md-3 box-business">
+      <h3>Business School</h3>
+      <div class="col-section">
+        <p>Une pédagogie basée sur les compétences-métier,</p>
+        <div class="separator"></div>
+        <p>Un corps professoral alliant expérience académique à l’expertise professionnelle,</p>
+        <div class="separator"></div>
+        <p>De solides compétences en Management des Entreprises,</p>
+        <div class="separator"></div>
+        <p>Une ouverture à l’international,</p>
+        <div class="separator"></div>
+        <p>Double et triple diplomation avec plusieurs écoles et universités au niveau national et international</p>
+      </div>
+    </div>
+    <div class="col-sm-3 col-md-3 box-ingenierie">
+      <h3>Ecole d’ingénierie</h3>
+      <div class="col-section">
+        <p>Une formation de haut niveau centrée sur l'apprentissage par projets « Project Based Learning »,</p>
+        <div class="separator"></div>
+        <p>Des laboratoires et équipements de pointe,</p>
+        <div class="separator"></div>
+        <p>50% de nos lauréats trouvent un emploi dans les 3 mois suivant leur diplomation et 93% de nos lauréats trouvent un emploi moins de 9 mois après leur diplomation,</p>
+        <div class="separator"></div>
+        <p>Des compétitions nationales et internationales pour stimuler la passion des étudiants pour la science et la technologie.</p>
+      </div>
+    </div>
+    <div class="col-sm-3 col-md-3 box-droit">
+      <h3>Sciences politiques, juridiques et sociales</h3>
+      <div class="col-section">
+        <p>Un large éventail de formations préparant aux différents métiers de la gouvernance, des Sciences Politiques et du droit des affaires,</p>
+        <div class="separator"></div>
+        <p>Une ouverture sur le monde via l’acquisition de compétences pluridisciplinaires sur plusieurs contextes géopolitiques,</p>
+        <div class="separator"></div>
+        <p>Premier Master droit des Affaires en alternance Université-Entreprises au Maroc.</p>
+      </div>
+    </div>
+    <div class="col-sm-3 col-md-3 box-sante">
+      <h3>Faculté des Sciences de la Santé</h3>
+      <div class="col-section">
+        <p>Des programmes académiques respectant les standards internationaux,</p>
+        <div class="separator"></div>
+        <p>Des moyens humains de haut niveau et des équipements de dernière technologie,</p>
+        <div class="separator"></div>
+        <p>Une approche pédagogique orientée vers la pratique en milieu professionnel,</p>
+        <div class="separator"></div>
+        <p>Des partenariats avec plusieurs organisations publiques, structures associatives et pédagogiques pour faciliter l’insertion professionnelle des lauréats.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="callaction" class="home-section paddingtop-40">
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <div class="callaction">
+      <div class="row">
+       <div class="col-md-8">
+         <div class="cta-text">
+          <h3>Nos conseillers en orientation ainsi que nos professeurs sont à votre disposition.</h3>
+        </div>
+      </div>
+      <div class="col-md-4">
+       <div class="cta-btn">
+        <a href="#" class="btn btn-skin btn-lg">Prenez un rendez-vous !</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="pourquoi" class="home-section paddingtop-80">
+  <div class="section-heading text-center">
+   <h2 class="h-bold">Pourquoi intégrer l’Université Mundiapolis ?</h2>
+   <div class="divider-short"></div>
+ </div>
+ <div class="container container marginbot-50">
+   <div class="row">
+    <div class="col-sm-3 col-md-3">
+      <span class="fa-stack fa-3x"><i class="fa fa-graduation-cap fa-stack-1x"></i></span>
+      <h3>Excellence<br>académique</h3>
+      <div class="col-section">
+        <p>Un corps professoral alliant expérience académique à l’expertise professionnelle.</p>
+      </div>
+    </div>
+    <div class="col-sm-3 col-md-3">
+      <span class="fa-stack fa-3x"><i class="fa fa-globe fa-stack-1x"></i></span>
+      <h3>Ouverture à<br>l’international</h3>
+      <div class="col-section">
+        <p>1 étudiant sur 4 en mobilité internationale. Plus de 20 parcours multi-pays avec de grandes écoles et universités internationales.</p>
+      </div>
+    </div>
+    <div class="col-sm-3 col-md-3">
+      <span class="fa-stack fa-3x"><i class="fa fa-suitcase fa-stack-1x"></i></span>
+      <h3>Encadrement et<br>accompagnement</h3>
+      <div class="col-section">
+        <p>93% d’insertion professionnelle grâce au programme d’accompagnement Mundiatawjih® reconnu comme meilleure pratique par la Banque Mondiale.</p>
+      </div>
+    </div>
+    <div class="col-sm-3 col-md-3">
+      <span class="fa-stack fa-3x"><i class="fa fa-star fa-stack-1x"></i></span>
+      <h3>Expérience<br>estudiantine</h3>
+      <div class="col-section">
+        <p>Des manifestations sociales, culturelles et artistiques tout au long de l’année</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="campus" class="home-section paddingbot-60">
+  <div class="container marginbot-50">
+   <div class="row">
+    <div class="col-lg-12">
+      <div class="section-heading text-center">
+       <h2 class="h-bold">CAMPUS</h2>
+       <h6>Mundiapolis, une expérience riche au sein d’un Campus d’exception</h6>
+     </div>
+     <div class="divider-short"></div>
+     <ul class="campus1">
+       <li>Un campus au sein d’un HUB  industriel à haut potentiel où sont installées plusieurs d'entreprises pionnières en recherche et développement </li>
+       <li>Un espace de vie et d’apprentissage « Integrated living and learning »</li>
+       <li>Un environnement multiculturel </li>
+       <li>Des infrastructures modernes pour garantir l'épanouissement des étudiants :</li>
+     </ul>
+     <div class="col-lg-4">
+       <ul class="campus2">
+        <li>Bibliothèque universitaire de 600m²</li>
+        <li>Salle de conférence de 400 places</li>
+        <li>Laboratoire de Psychomotricité et de Kinésithérapie</li>
+      </ul>
+    </div>
+    <div class="col-lg-4">
+     <ul class="campus2">
+      <li>Résidence universitaire moderne et équipée</li>
+      <li>Salle de marchés</li>
+      <li>Laboratoire NXP</li>
+      <li>Salle couverte omnisport de 2190m²</li>
+    </ul>
+  </div>
+  <div class="col-lg-4">
+   <ul class="campus2">
+    <li>Piscine semi olympique</li>
+    <li>Terrain de foot</li>
+    <li>Salle de prière</li>
+    <li>Superette</li>
+    <li>Restaurant</li>
+    <li>Cafétéria</li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-lg-12">
+     <div class="owl-carousel owl-theme">
+      <div data-merge="1"><img src="img/photo/image012.jpg" class="img-responsive" alt="photo campus mundiapolis casablanca"></div>
+      <div data-merge="1"><img src="img/photo/image002.jpg" class="img-responsive" alt="photo campus mundiapolis casablanca"></div>
+      <div data-merge="1"><img src="img/photo/image001.jpg" class="img-responsive" alt="photo campus mundiapolis casablanca"></div>
+      <div data-merge="1"><img src="img/photo/image015.jpg" class="img-responsive" alt="photo campus mundiapolis casablanca"></div>
+      <div data-merge="1"><img src="img/photo/image005.jpg" class="img-responsive" alt="photo campus mundiapolis casablanca"></div>
+      <div data-merge="1"><img src="img/photo/image004.jpg" class="img-responsive" alt="photo campus mundiapolis casablanca"></div>
+      <div data-merge="1"><img src="img/photo/image009.jpg" class="img-responsive" alt="photo campus mundiapolis casablanca"></div>
+      <div data-merge="1"><img src="img/photo/image007.jpg" class="img-responsive" alt="photo campus mundiapolis casablanca"></div>
+    </div>
+    </div></div>
+</div>
+</section>
+<section id="partenaires" class="home-section paddingbot-60">
+  <div class="container marginbot-50">
+   <div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+      <div class="section-heading text-center">
+       <h2 class="h-bold">PARTENAIRES</h2>
+       <h6>Une excellence académique reconnue au niveau international par des partenaires prestigieux</h6>
+     </div>
+     <div class="divider-short"></div>
+     <img class="partenaires" src="img/Partenaires.png" />
+   </div>
+ </div>
+</div>
+</section>
+
+<section id="temoignages" class="home-section paddingbot-60 parallax" data-stellar-background-ratio="0.5">
+  <div class="carousel-reviews broun-block">
+   <div class="container">
+    <div class="row">
+      <div class="section-heading text-center">
+       <h2 class="h-bold">LES ANCIENS TÉMOIGNENT !</h2>
+     </div>
+     <div class="divider-short"></div>
+     <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+       <div class="item active">
+        <div class="col-md-4 col-sm-6 anna">
+         <div class="block-text rel zmin">
+          <p>« En plus d’avoir bénéficié d’une formation de grande qualité encadrée par des professeurs et des intervenants nationaux et internationaux de haut niveau, j’ai pu profiter d’un des points forts de l’Université Mundiapolis : Son ouverture à l’international.<br>
+           D'un point de vue culturel, les expériences d’échange à l’international qu’offre l’Université Mundiapolis nous permettent d'enrichir nos connaissances et découvrir un autre mode de vie et d'autres cultures. Sur le plan personnel, quitter ses habitudes et partir découvrir l'inconnu est une manière de repousser ses limites et d'apprendre à mieux se connaitre. »
+         </p>
+         <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+       </div>
+       <div class="person-text rel text-light">
+        <img src="img/testimonials/sarah-machane.jpg" alt="" class="person img-circle" />
+        <a title="" href="#">Sarah MACHANE</a>
+        <p>Acheteuse junior - SAFRAN Group<br>Lauréate de la filière Achat et Logistique</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+     <div class="block-text rel zmin">
+      <p>« A travers son programme d’accompagnement Mundiatawjih®, l’Université Mundiapolis assure aux étudiants le meilleur accompagnement pour le développement personnel et la réussite de leur carrière professionnelle.<br>
+       Grâce au forum de recrutement « Mundia Job Fair », j’ai profité chaque année, tout au long de mon cursus, des rencontres avec des entreprises de renom, des ateliers de conseils et des séances de coaching. Ce qui m’a permis de m’orienter dans ma recherche d’emploi, construire un solide réseau professionnel et préparer mon insertion professionnelle. »
+     </p>
+     <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+   </div>
+   <div class="person-text rel text-light">
+    <img src="img/testimonials/sofia-mourchid.jpg" alt="" class="person img-circle" />
+    <a title="" href="#">Sofia MOURCHID</a>
+    <p>Consultante en Mystery Shopping – Wellincom<br>Lauréate de la filière Marketing</p>
+  </div>
+</div>
+<div class="col-md-4 col-sm-6 kaoutar">
+ <div class="block-text rel zmin">
+  <p>« L’Université Mundiapolis m’a permis de vivre une expérience humaine, personnelle et professionnelle hors du commun. Les différentes activités para-universitaires, socio-culturelles et sportives organisées tout au long de l’année permettent aux étudiants d’intégrer rapidement la vie de l’université, de se découvrir de nouvelles passions ou talents et de s’engager dans une démarche citoyenne. <br>
+   L’Université Mundiapolis est un lieu propice aux études supérieures et au développement personnel. Je dirais que c'est une expérience vraiment complète et qui vaut la peine d'être vécue. »
+ </p>
+ <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+</div>
+<div class="person-text rel text-light">
+  <img src="img/testimonials/zineb-krisni.jpg" alt="" class="person img-circle" />
+  <a title="" href="#">Zineb KRISNI</a>
+  <p>Chargée Relation Entreprises (CRE) – Attijariwafabank<br>Lauréate de la filière Comptabilité Contrôle Audit (CCA)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-inner">
+ <div class="item active">
+  <div class="col-md-6 col-sm-6">
+   <div class="block-text rel zmin">
+    <p>« Ce qui m’a tout de suite marqué à l’Université Mundiapolis, c’est l’approche à dimension humaine et personnelle des professeurs envers les étudiants. L’effectif réduit des classes offre un suivi personnalisé et efficace de la part des professeurs et facilite l’interaction et la proximité. 
+     <br>De plus, la double diplomation et les opportunités de mobilité internationale que l’Université Mundiapolis nous offre est un atout indéniable qui fait à coup sûr la différence sur un CV. ».
+   </p>
+   <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+ </div>
+ <div class="person-text rel text-light">
+  <img src="img/testimonials/reda-el-gueddah.jpg" alt="" class="person img-circle" />
+  <a title="" href="#">Reda EL GUEDDAH</a>
+  <p>Auditeur - Fidaroc Grant Thornton<br>
+   Lauréat de la filière Comptabilité Contrôle Audit (CCA)
+ </p>
+</div>
+</div>
+<div class="col-md-6 col-sm-6 kaoutar">
+ <div class="block-text rel zmin">
+  <p>« J'ai toujours été passionnée par les sciences et les mathématiques. La filière génie informatique, électronique et automatique de l’Université Mundiapolis est l'une des formations qui combine les deux et nous ouvre au monde des nouvelles technologies.<br>
+   L'ouverture internationale, les stages professionnels effectués tout au long de notre cursus, l'apprentissage du monde de l'entreprise grâce aux projets et études de cas sont les principaux atouts de l’école d’ingénierie de l’Université Mundiapolis. »
+ </p>
+ <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+</div>
+<div class="person-text rel text-light">
+  <img src="img/testimonials/ayoub-hadar.jpg" alt="" class="person img-circle" />
+  <a title="" href="#">Ayoub HADAR</a>
+  <p>Ingénieur en développement Mobile - X-Hub<br>
+   Lauréat de la filière Génie Informatique, électronique et automatique
+ </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+  <div class="container">
+   <div class="row">
+    <div class="col-sm-6 col-md-9">
+      <div class="widget">
+       <h5>Informations de contact</h5>
+       <ul class="col-md-6">
+        <li><strong>Campus</strong></li><li>        
+        <span class="fa-stack fa-md">
+         <i class="fa fa-map-marker fa-stack-1x"></i>
+       </span>Aéropole de Formation Mohammed V, BP 128 26202 - Nouaceur, Casablanca, Maroc
+     </li>
+     <li>
+       <span class="fa-stack fa-md">
+         <i class="fa fa-phone fa-stack-1x"></i>
+       </span>+212 (0) 529 01 37 07
+     </li>
+     <li>
+       <span class="fa-stack fa-md">
+         <i class="fa fa-envelope-o fa-stack-1x"></i>
+       </span>admission@mundiapolis.ma
+     </li>
+   </ul>
+   <ul class="col-md-6"><li><strong>Centre d’admission au centre de Casablanca</strong></li>
+<li><span class="fa-stack fa-md">
+         <i class="fa fa-map-marker fa-stack-1x"></i>
+       </span>380 Bd Brahim Roudani, Maarif, Casablanca, Maroc</li>
+<li><span class="fa-stack fa-md">
+         <i class="fa fa-phone fa-stack-1x"></i>
+       </span>+212 (0) 7 71 10 06 09</li>
+<li><span class="fa-stack fa-md">
+         <i class="fa fa-envelope-o fa-stack-1x"></i>
+       </span>admission@mundiapolis.ma
+  </li>
+</ul>
+ </div>
+</div>
+<div class="col-sm-6 col-md-3">
+  <div class="widget">
+   <h5>Réseaux sociaux</h5>
+   <ul class="company-social">
+    <li class="social-facebook"><a class="fa fa-facebook fa-2x"href="https://www.facebook.com/Mundiapolis/"></a></li>
+    <li class="social-youtube"><a class="fa fa-youtube-play fa-2x" href="https://www.youtube.com/mundiapolis"></a></li>
+    <li class="social-twitter"><a class="fa fa-twitter fa-2x" href="https://twitter.com/umcasablanca"></a></li>
+    <li class="social-instagram"><a class="fa fa-instagram fa-2x" href="https://www.instagram.com/universitemundiapolis/"></a></li>
+    <li class="social-linkedin"><a class="fa fa-linkedin fa-2x" href="https://fr.linkedin.com/company/universit-mundiapolis"></a></li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sub-footer">
+ <div class="container">
+  <div class="row">
+   <div class="col-sm-12 col-md-12 col-lg-12">
+    <p>© 2018 Mundiapolis, Tous les droit sont réservés</p>
+  </div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="js/custom.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/apicult/public/js/apicult.min.js"> </script>
+<script>apicult.key="B275CC6EE6E142EBAAA229965885E383";</script>
+</body>
+</html>
