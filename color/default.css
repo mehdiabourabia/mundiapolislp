@@ -1,0 +1,115 @@
+a:hover,
+a:focus {
+    color: #00546c;
+}
+
+.circled {
+	background: #00546c;
+}
+
+.con1 > div, .con2 > div, .con3 > div { 
+	background-color: #00546c;
+}
+
+.scrollup:hover {
+	background: #00546c;
+}
+
+
+/* service */
+
+.service-icon span {
+	color: #00546c;
+}
+
+
+
+/* button */
+.btn-skin {
+    background-color: #ff5c7d;
+    border-color: #ff5c7d;
+}
+
+
+/* top */
+.top-area {
+	background: #00546c;
+}
+
+/* menu */
+
+.navbar-custom ul.nav ul.dropdown-menu li a:hover {
+	color: #00546c;
+}
+.navbar-custom.top-nav-collapse .nav li a:hover,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li.active a,.navbar-custom.top-nav-collapse .nav li.active a  {
+    color: #00546c;
+}
+
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background-color: #00546c;
+}
+
+
+.bg-skin {
+	background: #00546c;
+}
+
+.highlight-color {
+	background-color: #00546c;
+}
+.color {
+	color: #00546c;
+}
+
+/* pricing box  */
+.pricing-content.featured h2,.pricing-content.featured .price-bottom {
+	background-color:#00546c;
+}
+.pricing-content.featured h3 {
+	background:#00546c;
+}
+
+
+
+/* team */
+.cbp-l-grid-team-name {
+    color: #00546c;
+}
+
+.cbp-l-filters-button .cbp-filter-counter {
+	background-color: #00546c;
+}
+
+.cbp-l-filters-alignLeft .cbp-filter-item-active {
+    /* @editable properties */
+    background-color: #00546c;
+    border:1px solid #00546c;
+}
+
+.cbp-l-filters-dropdownWrap {
+    background: #00546c;
+}
+.cbp-l-filters-button .cbp-filter-item.cbp-filter-item-active {
+    /* @editable properties */
+    background-color: #00546c;
+    border-color: #00546c;
+}
+.cbp-l-caption-buttonLeft,
+.cbp-l-caption-buttonRight {
+    /* @editable properties */
+    background-color: #00546c;
+}
+
+.cbp-l-caption-buttonLeft:hover,
+.cbp-l-caption-buttonRight:hover {
+    /* @editable properties */
+    background-color: #00546c;
+}
+
+.form-control:focus {
+  border-color: #00546c;
+}
